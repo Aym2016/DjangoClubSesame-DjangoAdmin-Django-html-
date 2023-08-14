@@ -1,0 +1,14 @@
+{% extends 'crudapp/base1.html' %}
+{% block replace %}
+<CENTER>
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to SESAME CLUBS<br>Hello {{ contact.firstName }}</h1>
+  <p class="lead">its an awesome profile picture</p>
+  <hr class="my-4">
+  <img src="{{ contact.display_pictur.url }}" class="image_responsive" height="100px" width="100px">
+  <p>
+    {{ user_pr.display_pictur.url }}<BR>
+   You have learned some awesome technologies like {{ user_pr.firstName }} {{ user_pr.lastName }}</p>
+</div>
+</CENTER>
+{% endblock %}

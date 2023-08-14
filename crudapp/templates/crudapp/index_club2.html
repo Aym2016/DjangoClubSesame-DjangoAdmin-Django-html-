@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Club_Show</title>
+</head>
+<body>
+<h1>Clubs List</h1>
+<div>
+<ul>
+{% for club in club_list %}
+<li>
+<h2>Name {{ club.name }}</h2>
+<p>  typeClub{{ club.typeClub}}</p>
+<!--<p> class {{ club.standard}}</p>-->
+</li>
+{% endfor %}
+</ul>
+</div>
+</body>
+</html>

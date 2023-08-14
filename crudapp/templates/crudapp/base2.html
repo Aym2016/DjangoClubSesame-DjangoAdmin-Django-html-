@@ -1,0 +1,6 @@
+{% if user.is_authenticated %}
+  {% block page %}
+  {% endblock %}
+{% else %}
+  <p>Please Log in</p>
+{% endif %}
